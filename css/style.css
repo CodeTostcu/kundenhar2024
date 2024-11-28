@@ -1,0 +1,127 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+
+#wrapper{
+    display: grid;
+    grid-template-columns: 15% 1fr 1fr 1fr;
+    grid-template-rows: 10% 20% 20% 1fr 10%;
+    grid-template-areas: 
+    'hd nv1 nv2 nv3'
+    'sc1 sc1 sc1 sc1'
+    'sc2 sc2 sc2 sc2'
+    'sc3 sc3 sc3 sc3'
+    'ft ft ft ft'
+    ;   
+    gap: 5px;
+    height: 96vh;
+    
+
+}
+
+
+body{
+    background-color: #2B2B2B;
+    padding: 5px;
+    margin: 5px; 
+}
+
+header{
+    grid-area: hd;
+    background-color:  #353A40;
+    border-radius: 15px;
+    display: grid;
+}
+
+#nav1{
+    grid-area: nv1;
+    background-color:#353A40;
+    border-radius: 20px;
+    display: grid;
+    
+}
+
+#nav2{
+    grid-area: nv2;
+    background-color:#353A40;
+    border-radius: 20px;
+    display: grid;
+}
+
+#nav3{
+    grid-area: nv3;
+    background-color: #353A40;
+    border-radius: 20px;
+    display: grid;
+}
+
+#section1{
+    grid-area: sc1;
+    background-color: #353A40;
+    border-radius: 20px;
+    display: grid;
+    color: #FDFDFD;
+    text-align: left;
+    font-size: 20px;
+    font-family: "Merriweather", serif;
+    font-style: normal;
+    font-weight: 700;
+    padding: 30px;
+    
+}
+
+#section2{
+    grid-area: sc2;
+    background-color:  #353A40;
+    border-radius: 20px;
+    display: grid;
+    color: #FDFDFD;
+    text-align: left;
+    font-size: 20px;
+    font-family: "Merriweather", serif;
+    font-style: normal;
+    font-weight: 700;
+    padding: 30px;
+}
+
+#section3{
+    grid-area: sc3;
+    background-color: #353A40;
+    border-radius: 20px;
+    display: grid;
+}
+
+footer{
+    grid-area: ft;
+    background-color:  #353A40 ;
+    border-radius: 20px;
+    display: grid;
+    
+}
+
+nav a:hover{
+    background:  #5c6571;
+    text-decoration: underline;
+    color:rgb(23, 21, 21);
+}
+
+a{
+    text-align: center;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: large;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    padding: 15px;
+    display: inline-block;
+
+}
+
+
+
+span{
+    color: #D9534F;
+}
