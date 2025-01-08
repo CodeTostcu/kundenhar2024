@@ -36,7 +36,7 @@ header{
     display: grid;
 }
 
-#nav1{
+.nav1{
     grid-area: nv1;
     background-color:#353A40;
     border-radius: 20px;
@@ -44,14 +44,14 @@ header{
     
 }
 
-#nav2{
+.nav2{
     grid-area: nv2;
     background-color:#353A40;
     border-radius: 20px;
     display: grid;
 }
 
-#nav3{
+.nav3{
     grid-area: nv3;
     background-color: #353A40;
     border-radius: 20px;
@@ -95,10 +95,7 @@ header{
    
 }
 
-#section3 img {
-    width:190px;
-    height: 130px ;
-}
+
 
 footer{
     grid-area: ft;
@@ -131,7 +128,7 @@ a{
 }
 
 
-span{
+.redcolored{
     color: #D9534F;
 }
 
@@ -170,12 +167,23 @@ span{
     
 }
 
-#picture{
-    width: 120px;
+#section3:hover{
+    transform: scale(1.01);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.5s ease-out;
+    height: 200px;
+    
+    
+}
+
+
+.picture{
+    width: 170px;
     height: 120px;
     border-radius: 20px;
     border-style: solid;
     margin-left: 5px;
+    float: left;
    
    
 }
@@ -196,3 +204,218 @@ span{
     
 }
 
+#smalltext{
+    text-align: center;
+    padding-top: 20px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: large;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    padding: 15px;
+    transition: all 0.8s ease-in-out;
+
+    
+   
+}
+
+#redcoloredsmall{
+    font-weight: 400;
+    color: #D9534F;
+}
+
+footer{
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: large;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    transition: all 0.8s ease-in-out;
+}
+
+#wrapper2{
+    display: grid;
+    grid-template-columns: 15% 1fr 1fr 1fr;
+    grid-template-rows: 10% 20% 20% 1fr 10%;
+    grid-template-areas: 
+   'hd nv1 nv2 nv3'
+    'scc1 scc1 scc1 scc1'
+    'scc1 scc1 scc1 scc1'
+    'scc1 scc1 scc1 scc1'
+    'ft ft ft ft';
+    ;   
+    gap: 5px;
+    height: 96vh;
+}
+
+
+.container {
+    display: flex;       
+    gap: 20px;           
+    justify-content: center; 
+}
+
+.box1{
+    background-color:#FDFDFD;
+    height: 360px;
+    width: 300px;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 4px;
+    border-color: #027148;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+
+
+.box2{
+    background-color:#FDFDFD;
+    height: 360px;
+    width: 300px;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 4px;
+    border-color: #FFFF00;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.box3{
+    background-color:#FDFDFD;
+    height: 360px;
+    width: 300px;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 4px;
+    border-color: #800080;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+#sectionA{
+    grid-area: scc1;
+    background-color: #353A40;
+    border-radius: 20px;
+    display: grid;
+    color: #FDFDFD;
+    text-align: left;
+    font-size: 20px;
+    font-family: "Merriweather", serif;
+    font-style: normal;
+    font-weight: 700;
+    padding: 30px;
+
+    
+}
+
+
+#pfp1 {
+    grid-area: scc1;
+    background-image: url('/img/happyman.avif');
+    height: 100px;
+    width: 100px;
+    background-size: cover; 
+    background-position: center;
+    border-radius: 50%; 
+    border: 2px solid #027148; 
+   
+}
+
+#pfp2 {
+    grid-area: scc1;
+    background-image: url('/img/user.png');
+    height: 100px;
+    width: 100px;
+    background-size: cover; 
+    background-position: center;
+    border-radius: 50%; 
+    border: 2px solid #FFFF00; 
+   
+}
+
+#pfp3 {
+    grid-area: scc1;
+    background-image: url('/img/sad.jpeg');
+    height: 100px;
+    width: 100px;
+    background-size: cover; 
+    background-position: center;
+    border-radius: 50%; 
+    border: 2px solid #800080; 
+   
+}
+
+
+
+#name {
+    
+    color: #027148;
+    font-weight: bold; 
+    text-align: center;
+    margin: 0; 
+
+}
+
+#name2 {
+    
+    color: #FFFF00;
+    font-weight: bold; 
+    text-align: center;
+    margin: 0; 
+
+}
+
+#name3 {
+    
+    color: #800080;
+    font-weight: bold; 
+    text-align: center;
+    margin: 0; 
+
+}
+
+.revtext {
+    
+    color: #000000;
+    font-size: 10px;
+    text-align: center;
+    margin-top: 10px;
+    align-items: center;
+    padding-top: 10px;
+    display: grid;
+    font-size: large;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    padding: 15px;
+    transition: all 0.8s ease-in-out;
+}
+
+
+#rating1{
+    color: #D9534F;
+}
+
+#rating2{
+    color: chartreuse;
+}
+
+#rating3{
+    color: darkgreen;
+}
