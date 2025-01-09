@@ -419,3 +419,118 @@ footer{
 #rating3{
     color: darkgreen;
 }
+
+.box1:hover{
+    transform: scale(1.01);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: none;
+    height: 350px;
+}
+
+.box2:hover{
+    transform: scale(1.01);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: none;
+    height: 350px;
+}
+
+
+.box3:hover{
+    transform: scale(1.01);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: none;
+    height: 350px;
+}
+
+#wrapper3{
+    display: grid;
+    grid-template-columns: 15% 1fr 1fr 1fr;
+    grid-template-rows: 10% 78.4% 10%;
+    grid-template-areas: 
+    'hd nv1 nv2 nv3'
+    'sccc1 sccc1 sccc2 sccc2'
+    'ft ft ft ft';
+    ;   
+    gap: 5px;
+    height: 96vh;
+    
+
+}
+
+#ssection1{
+    grid-area: sccc1;
+    background-color: #353A40;
+    border-radius: 20px;    
+    
+}
+
+#ssection2{
+    grid-area: sccc2;
+    background-color: #353A40;
+    border-radius: 20px;    
+    flex-direction: column;
+    display: flex;
+    padding-top: 100px;
+    align-items: center; 
+    
+    gap: 10px;
+}
+
+#worker1{
+    grid-area: sccc2;
+    background-image: url('/img/donald.png');
+    height: 150px;
+    width: 150px;
+    background-size: cover; 
+    background-position: center;
+    border-radius: 50%; 
+    border: 2px solid white; 
+    
+    
+}
+
+#worker2{
+    grid-area: sccc2;
+    background-image: url('/img/Joe.jpg');
+    height: 150px;
+    width: 150px;
+    background-size: cover; 
+    background-position: center;
+    border-radius: 50%; 
+    border: 2px solid white; 
+    
+    
+}
+ 
+
+.abttext{
+    text-align: center;
+    display: grid;
+    color: #FDFDFD;
+    text-align: center;
+    font-size: 30px;
+    font-family: "Merriweather", serif;
+    font-style: normal;
+    font-weight: 700;
+    padding-top: 30px;
+    padding-left: 50px;
+    text-decoration: underline;
+    text-decoration-color: #000000;
+    
+}
+
+#smallabt{
+    color: #FDFDFD;
+    font-size: 10px;
+    text-align: center;
+    margin-top: 10px;
+    align-items: center;
+    padding-top: 100px;
+    display: grid;
+    font-size: large;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    padding: 15px;
+    transition: all 0.8s ease-in-out;
+}
